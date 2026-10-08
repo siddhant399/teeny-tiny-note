@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A tiny, goofy peace offering." />
+    <title>Tiny goof alert</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="scene" aria-labelledby="apology-title">
+      <div class="background-glow glow-one" aria-hidden="true"></div>
+      <div class="background-glow glow-two" aria-hidden="true"></div>
+      <div class="floating-hearts" aria-hidden="true"></div>
+
+      <section class="letter-card">
+        <div class="goof-sticker" aria-hidden="true">
+          <span class="goof-sticker__cloud">☁️</span>
+          <span class="goof-sticker__label">oops!</span>
+        </div>
+        <div class="stamp" aria-hidden="true">✦</div>
+        <p class="eyebrow">tiny goof transmission</p>
+        <h1 id="apology-title">my bad, <span id="recipient-name">you</span>.</h1>
+        <p class="lead" id="intro-copy"></p>
+
+        <button class="goof-orb" id="goof-button" type="button" aria-label="Boop the goofball">
+          <span class="goof-orb__face" aria-hidden="true">🥴</span>
+          <span class="goof-orb__caption">boop the blorb</span>
+        </button>
+
+        <div class="return-note" aria-live="polite">
+          <span class="return-note__sparkle" aria-hidden="true">✦</span>
+          <p id="return-copy"></p>
+        </div>
+
+        <div class="actions">
+          <button class="button button--primary" id="heart-button" type="button">
+            Launch heart rocket <span aria-hidden="true">♥</span>
+          </button>
+          <button class="button button--quiet" id="space-button" type="button">
+            Shhh, pause wiggles
+          </button>
+        </div>
+
+        <p class="response" id="response" role="status" aria-live="polite"></p>
+        <p class="signature" id="signature-copy"></p>
+      </section>
+
+      <p class="footer-note">tiny site. big wiggles.</p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
